@@ -1,0 +1,9 @@
+<launch>
+  <!-- Launch Jackal Gazebo simulation -->
+  <include file="$(find jackal_gazebo)/launch/jackal_world.launch">
+    <arg name="world_name" value="$(find jackal_gazebo)/worlds/empty.world"/>
+  </include>
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model jackal -param robot_description" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jackal_viz)/rviz/navigation.rviz" output="screen" />
+  <node name="bezier" pkg="jackal_nav_sim" type="bezier.py" output="screen" required="true" />
+</launch>

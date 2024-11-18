@@ -1,0 +1,65 @@
+# ROS-specific
+/build/
+/devel/
+/log/
+*.log
+*.bag
+*.pyc
+*.swp
+.catkin_workspace
+.catkin_tools
+*.launch~  # Temporary launch files
+.mrconfig  # ROS workspace configs
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Other build tools
+/compile_commands.json
+/autosave/
+
+# IDEs and text editors
+.idea/
+.vscode/
+*.iml
+*.suo
+*.user
+*.dll
+*.pdb
+*.exe
+*.cache
+*.obj
+*.o
+*.class
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*.tmp
+*.temp
+*.log
+
+# ROS dependencies managed by rosdep
+rosdep-install.log
+
+# Git-specific
+*.orig
+*.rej
+*.~*
+*.merge_file_*
+
+# Generated files
+*.pdf
+*.eps
+*.png
+*.jpg
+*.jpeg
+
